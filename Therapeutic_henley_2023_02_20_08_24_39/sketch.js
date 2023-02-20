@@ -5,12 +5,18 @@ function draw() {
   background(220);
   imageMode(CENTER);
   img2.resize(windowWidth, windowHeight);
+  
   if(visbilleder){
   image(img2, windowWidth/2, windowHeight/2);
-
+  fill(0);
+  rectMode(CENTER);
+      rect(windowWidth/2, windowHeight/5,200,200);
     image(img, windowWidth/2, windowHeight/5);
+    imageMode(CENTER);
+    image(img3, windowWidth/2, windowHeight/2);
   }
   if(visbillede2){
+    
     image(img2, windowWidth/2, windowHeight/2);
 
   }
@@ -20,21 +26,14 @@ let img2;
 function preload() {
   img = loadImage('Nokia.png');
   img2 = loadImage('Baggrund.jpg');
-
+img3 = loadImage('aaskrald.jpg');
 }
 
-let button;
-let b2;
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(0);
-  button = createButton('Restaffald');
-  button.position(width/2, height/2);
-  button.mousePressed(changeBG);
-
-  b2 = createButton('Bioaffald');
-  b2.position(width/2, height/2.5);
-  b2.mousePressed(changeBG2);
+ 
 }
 
 function changeBG() {
@@ -51,4 +50,11 @@ function changeBG2() {
   visbilleder = false;
   visbillede2 = true;
   
+}
+
+
+function mousePressed(){
+
+print(mouseX,mouseY);
+
 }
