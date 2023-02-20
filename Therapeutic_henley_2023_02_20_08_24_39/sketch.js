@@ -54,7 +54,7 @@ function changeBG2() {
 
 
 function mousePressed(){
-
+if(mouseX>)
 print(mouseX,mouseY);
 
 }
