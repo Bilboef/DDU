@@ -1,7 +1,7 @@
 function draw() {
   background(220);
   imageMode(CENTER);
-    image(img, windowWidth/2, windowHeight/2.5);
+    image(img, windowWidth/2, windowHeight/5);
 }
 let img;
 function preload() {
