@@ -42,8 +42,7 @@ function changeBG() {
   button.hide();
   visbilleder = false;
   visbillede2 = true;
-  let val = random(255);
-  background(val);
+ 
 }
 
 function changeBG2() {
@@ -51,6 +50,5 @@ function changeBG2() {
   button.hide();
   visbilleder = false;
   visbillede2 = true;
-  let val = random(255);
-  background(val);
+  
 }
